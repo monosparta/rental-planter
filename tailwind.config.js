@@ -6,11 +6,14 @@ module.exports = {
   ],
   theme: {
     screens: {
-      desktop: { min: "769px", max: "3000px" },
-      tablet: { min: "376px", max: "768px" },
-      phone: { min: "100px", max: "375px" },
+      desktop: { min: "1560px" },
+      tablet: { min: "768px", max: "1559px" },
+      phone: { min: "375px", max: "767px" },
     },
     extend: {},
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [
+    require("flowbite/plugin"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };

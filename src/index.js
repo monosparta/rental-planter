@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./pages/App.js";
+import Main from "./pages/Main.js";
 import Admin from "./pages/Admin";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -17,7 +17,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/main" element={<App />} />
+      <Route path="/main" element={<Main />} />
       <Route path="/admin" element={<Admin />} />
       <Route path="/rentForm/:id" element={<RentForm />} />
       <Route path="/rent/edit/:id" element={<EditRent />} />

@@ -72,28 +72,28 @@ const ResetPwd = () => {
 
   return (
     <div
-      class="relative bg-cover flex justify-center items-center tablet:flex-col phone:flex-col"
+      className="relative bg-cover flex justify-center items-center tablet:flex-col phone:flex-col"
       style={{ backgroundImage: `url(${Background})`, height: "100vh" }}
     >
-      <div class="rounded-3xl bg-white flex flex-row h-3/5 w-4/5 tablet:flex-col tablet:w-3/5 phone:flex-col phone:w-4/5">
+      <div className="rounded-3xl bg-white flex flex-row h-3/5 w-4/5 tablet:flex-col tablet:w-3/5 phone:flex-col phone:w-4/5">
         <img
           src={plantIMG}
-          class="desktop:rounded-l-3xl object-cover w-2/5 tablet:w-full tablet:h-2/5 tablet:rounded-t-3xl phone:w-full phone:h-2/5 phone:rounded-t-3xl"
+          className="desktop:rounded-l-3xl object-cover w-2/5 tablet:w-full tablet:h-2/5 tablet:rounded-t-3xl phone:w-full phone:h-2/5 phone:rounded-t-3xl"
           alt="plant"
         ></img>
-        <div class="flex flex-wrap flex-row py-12 w-3/5 space-y-12 overflow-y-auto tablet:w-full phone:w-full">
-          <div class="w-full">
-            <h1 class="text-center text-[40px] font-Nova_Flat font-normal tablet:text-[32px] phone:text-[24px]">
+        <div className="flex flex-wrap flex-row py-12 w-3/5 space-y-12 overflow-y-auto tablet:w-full phone:w-full">
+          <div className="w-full">
+            <h1 className="text-center text-[40px] font-Nova_Flat font-normal tablet:text-[32px] phone:text-[24px]">
               重設密碼
             </h1>
-            <h2 class="text-[20px] text-center text-[#929292] tracking-widest font-normal tablet:text-[20px] phone:text-[14px]">
+            <h2 className="text-[20px] text-center text-[#929292] tracking-widest font-normal tablet:text-[20px] phone:text-[14px]">
               Reset Password
             </h2>
           </div>
-          <div class="w-full flex flex-col items-center tablet:px-10 phone:px-10">
+          <div className="w-full flex flex-col items-center tablet:px-10 phone:px-10">
             <label
               for="password"
-              class="block mb-2 text-sm font-medium text-black w-1/2 tablet:w-full phone:w-full"
+              className="block mb-2 text-sm font-medium text-black w-1/2 tablet:w-full phone:w-full"
             >
               密碼
             </label>
@@ -102,13 +102,13 @@ const ResetPwd = () => {
               name="password"
               id="password"
               placeholder="輸入密碼"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-1/2 h-[42px] tablet:w-full phone:w-full dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-1/2 h-[42px] tablet:w-full phone:w-full dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
               required
               onChange={pwd}
             />
             <label
               for="password"
-              class="block my-2 text-sm font-medium text-black w-1/2 tablet:w-full phone:w-full"
+              className="block my-2 text-sm font-medium text-black w-1/2 tablet:w-full phone:w-full"
             >
               確認密碼
             </label>
@@ -117,26 +117,26 @@ const ResetPwd = () => {
               name="password2"
               id="password2"
               placeholder="再次輸入密碼"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-1/2 h-[42px] tablet:w-full phone:w-full dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg w-1/2 h-[42px] tablet:w-full phone:w-full dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
               required
               onChange={pwd2}
               // onBlur 點旁邊空白
             />
           </div>
 
-          <div class="flex flex-col w-full space-y-2 items-center tablet:px-10 phone:px-10">
-            <div class={visibility}>
-              <label class={style}>{msg}</label>
+          <div className="flex flex-col w-full space-y-2 items-center tablet:px-10 phone:px-10">
+            <div className={visibility}>
+              <label className={style}>{msg}</label>
             </div>
             <button
-              class="w-1/2 h-[42px] text-[14px] bg-[#519E75] text-white rounded-lg tablet:w-full phone:w-full"
+              className="w-1/2 h-[42px] text-[14px] bg-[#519E75] text-white rounded-lg tablet:w-full phone:w-full"
               disabled={disabled}
               onClick={resetPwd}
             >
               確認
             </button>
             <button
-              class="w-1/2 h-[42px] text-[14px] bg-[#929292] text-white rounded-lg tablet:w-full phone:w-full"
+              className="w-1/2 h-[42px] text-[14px] bg-[#929292] text-white rounded-lg tablet:w-full phone:w-full"
               onClick={() => navigate("/")}
             >
               取消
